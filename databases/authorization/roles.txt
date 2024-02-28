@@ -1,0 +1,17 @@
+Description: To store information about user roles.
+
+CREATE TABLE roles (
+    ROLE_ID INT AUTO_INCREMENT PRIMARY KEY,
+    ROLE_NAME VARCHAR(50) UNIQUE NOT NULL
+);
+
+INSERT INTO roles (ROLE_ID, ROLE_NAME)
+VALUES
+    (1, 'user'),
+    (2, 'admin');
+
+
+| ROLE_ID | ROLE_NAME |
+|---------|-----------|
+| 1       | user      |
+| 2       | admin     |

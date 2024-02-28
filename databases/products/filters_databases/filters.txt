@@ -1,0 +1,10 @@
+//Description: The Filters table serves as a catalog or dictionary for the different types of filters that can be associated with products.
+
+CREATE TABLE filters (
+    FILTER_ID INT AUTO_INCREMENT PRIMARY KEY,
+    FILTER_TYPE VARCHAR(255) NOT NULL
+);
+  
+| FILTER_ID | FILTER_TYPE |
+|-----------|-------------|
+| 1         | COLOR       |

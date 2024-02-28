@@ -1,0 +1,15 @@
+Description:To establish many-to-many relationships between products and filters.
+
+CREATE TABLE product_filters (
+    PRODUCT_ID INT,
+    FILTER_ID INT,
+    FILTER_VALUE VARCHAR(255),
+    PRIMARY KEY (PRODUCT_ID, FILTER_ID),
+    FOREIGN KEY (PRODUCT_ID) REFERENCES products(PRODUCT_ID),
+    FOREIGN KEY (FILTER_ID) REFERENCES filters(FILTER_ID)
+);
+
+| PRODUCT_ID | FILTER_ID | FILTER_VALUE_ID |
+|-------------|------------|-------------------|
+| 1           | 1          | 1                 |
+| 1           | 1          | 2                 |

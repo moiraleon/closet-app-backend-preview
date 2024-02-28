@@ -1,0 +1,14 @@
+Description: To store information about users.
+
+CREATE TABLE users (
+    UID VARCHAR(36) PRIMARY KEY,
+    EMAIL VARCHAR(45) UNIQUE NOT NULL,
+    PASSWORD VARCHAR(45) NOT NULL,
+    FIRST_NAME VARCHAR(45) NOT NULL,
+    LAST_NAME VARCHAR(45) NOT NULL,
+    AVATAR VARCHAR(250),
+);
+
+| UID    | EMAIL             | PASSWORD | FIRST_NAME | LAST_NAME | AVATAR |
+|--------|-------------------|----------|------------|-----------|--------|
+| 456789 | example@email.com| password | John       | Doe       | NULL   |

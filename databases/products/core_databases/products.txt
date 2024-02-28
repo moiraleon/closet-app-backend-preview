@@ -1,0 +1,17 @@
+Description: To store information about products.
+
+CREATE TABLE products (
+    PRODUCT_ID INT AUTO_INCREMENT PRIMARY KEY,
+    IMG VARCHAR(255) NOT NULL,
+    PRODUCT_TYPE VARCHAR(50) NOT NULL,
+    SUPPORTED BOOLEAN NOT NULL,
+    USER_ID VARCHAR(36), -- Foreign key referencing the Users table
+    FOREIGN KEY (USER_ID) REFERENCES users(UID)
+);
+
+
+** UserID VARCHAR(36), -- Foreign key referencing the Users table
+
+| PRODUCT_ID | IMG               | PRODUCT_TYPE | SUPPORTED | USER_ID |
+|------------|-------------------|--------------|-----------|---------|
+| 1          | example_image.jpg | shirt        | true      | 456789  |

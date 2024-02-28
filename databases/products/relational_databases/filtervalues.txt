@@ -1,0 +1,14 @@
+Description: To store possible values for each filter.
+
+CREATE TABLE filter_values (
+    FILTER_VALUE_ID INT PRIMARY KEY AUTO_INCREMENT,
+    FILTER_ID INT,
+    FILTER_VALUE VARCHAR(255),
+    FOREIGN KEY (FILTER_ID) REFERENCES filters(FILTER_ID)
+);
+
+| FILTER_VALUE_ID | FILTER_ID | FILTER_VALUE |
+|------------------|-----------|----------------|
+| 1                | 1         | red            |
+| 2                | 1         | blue           |
+

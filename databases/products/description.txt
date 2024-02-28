@@ -1,0 +1,9 @@
+Description on how these databases relate
+
+If we want to add a new filter for a product we need to:
+1: add the general product to the product database and return the PRODUCT_ID
+2: add the filter type to the filter table and return the FILTER_ID
+3. add the filter value and the FILTER_ID to the filter_values table  and return the FILTER_VALUE_ID
+4. add the PRODUCT_ID, FILTER_ID, and FILTER_VALUE_ID to the product_filters table.
+
+The product_filters helps us reference all of the associated filters for a corresponding product with the filter id and filter value id in order to locate the necessary data.
